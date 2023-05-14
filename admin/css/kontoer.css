@@ -1,0 +1,76 @@
+#bar
+{
+    margin-top: 5rem;
+}
+
+#event_current
+{
+    background-color: #1B1B25;
+    margin-right: 2rem;
+}
+
+.event:hover
+{
+    background-color: #1B1B25;
+   cursor: auto;
+}
+
+#icon
+{
+    width: 5%;
+    cursor: pointer;
+}
+
+input, select, option
+{
+    color:white;
+    background-color: #2D2D3C;
+}
+
+
+
+#opret
+{
+    height: fit-content;
+}
+
+#opret_form
+{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+}
+
+.option, #options
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.option
+{
+    width: 60%;
+}
+#options
+{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.option
+{
+    margin-bottom: .5rem;
+}
+select
+{
+    width: 100%;
+}
+button
+{
+   justify-self: flex-end;
+}
+
+

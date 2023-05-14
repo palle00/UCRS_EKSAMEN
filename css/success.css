@@ -1,0 +1,83 @@
+@import url('https://use.typekit.net/mlf2xlt.css');
+
+
+body {
+	background-image: url("../img/background.webp");
+	background-size: cover;
+	background-position: center;
+	overflow: hidden;
+	font-family: "new-order", sans-serif;
+	font-weight: bold;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	overflow: hidden;
+
+}
+
+.container {
+	background-color: #f8f8f8;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	border-radius: 5px;
+	padding: 50px;
+	max-width: 600px;
+	margin: 0 auto;
+	text-align: center;
+
+}
+
+h1 {
+	color: black;
+	font-size: 36px;
+	font-weight: 400;
+	margin-top: 0;
+	font-weight: bold;
+}
+
+p {
+	color: black;
+	font-size: 18px;
+	line-height: 1.5;
+	margin-bottom: 20px;
+	font-weight: 500;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-align: left;
+}
+
+li {
+	color: black;
+	font-size: 18px;
+	line-height: 1.5;
+	margin-bottom: 10px;
+	font-weight: 500;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.btn {
+	background-color: #0077b5;
+	color: #ffffff;
+	padding: 10px 20px;
+	border-radius: 5px;
+	text-decoration: none;
+	transition: background-color 0.3s ease;
+	display: inline-block;
+}
+
+.btn:hover {
+	background-color: #005b8c;
+	cursor: pointer;
+}
+
+img {
+	width: 6vw;
+
+}

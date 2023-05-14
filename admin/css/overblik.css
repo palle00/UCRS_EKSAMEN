@@ -1,0 +1,79 @@
+.wrapper {
+    display: grid;
+    grid-template-columns: .1fr 1fr;
+    grid-template-rows: .1fr 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    height: 100vh;
+    grid-column-gap:6rem;
+    grid-row-gap:1rem;
+    }
+    
+    .sidebar { grid-area: 1 / 1 / 3 / 2; }
+    .title_card { grid-area: 1 / 2 / 2 / 3; }
+    .fest-kasse { grid-area: 2 / 2 / 3 / 3; }
+
+    input, select, option
+    {
+        color:white;
+        background-color: #2D2D3C;
+    
+    }
+
+
+    .filters
+    {
+        width: 100%;
+        display: inline-flex;
+        justify-content: flex-end;    
+        gap: .5rem;
+        margin-top: 1rem;
+    }
+
+    .øko
+    {
+        display: none;
+    }
+
+    #stati
+    {
+        width: 100%;
+        margin-bottom: 2rem;
+        display: flex;
+    }
+    #stati div{
+        background-color: #1B1B25;
+        margin-right: 3rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    #stati p
+    {
+        margin-top: 1rem;
+        font-size: 3rem;
+    }
+
+    #stati div:last-child{
+        margin-right: 0rem;
+    }
+    .option
+{
+    margin-bottom: .5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+   
+}
+.option label
+{
+    width: fit-content;
+}
+
+.option #sort
+{
+    width: fit-content;
+}

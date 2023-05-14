@@ -1,0 +1,20 @@
+#myChart
+{
+     width: 100%;
+    max-height: 200px;
+    font-size: 10rem;
+}
+
+#statistik
+{
+    width: 60%;
+    justify-content:center;
+   
+}
+
+#statistik p
+{
+    font-size: 6rem;
+  
+}
+

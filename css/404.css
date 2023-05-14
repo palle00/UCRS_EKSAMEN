@@ -1,0 +1,90 @@
+
+html 
+{
+    scroll-behavior: smooth;
+    overflow: hidden;
+}
+
+/*Custom scrollbar - Firefox */
+*{
+    scrollbar-width: thin;
+    box-sizing: border-box;
+    scrollbar-color: rgb(253, 165, 93) #f1f1f1;
+    font-family: "Rubik", sans-serif;
+}
+ 
+
+/*Custom scrollbar - Chrome, Edge, and Safari */
+::-webkit-scrollbar 
+{
+    width: 8px;
+}
+  
+::-webkit-scrollbar-track 
+{
+    background: #f1f1f1;
+}
+  
+::-webkit-scrollbar-thumb 
+{
+    background: rgb(253, 165, 123);
+}
+  
+::-webkit-scrollbar-thumb:hover 
+{
+    background: rgb(253, 165, 53);
+}
+
+body
+{
+    background-color: #FFF8EE;
+}
+
+
+.container
+ {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     flex-direction: column;
+  
+ }
+
+ .titel
+ {
+    font-size: 40px;
+    font-weight: 400;
+ }
+
+ .desc
+ {
+    margin-top: 20px;
+    color:rgb(91, 91, 91)
+ }
+
+ .error
+{
+font-size: 120px;
+}
+ 
+.btn
+{
+
+    margin-top: 20px;
+    display: flex;
+    border-radius:10px;
+	border:1px solid #fda55d;
+    padding: 10px 50px;
+    color: black;
+    background-color:  #fda55d;
+    cursor: pointer;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.btn:hover
+{
+    background-color:  #f38022;
+    border:1px solid #f38022;
+}

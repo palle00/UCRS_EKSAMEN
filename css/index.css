@@ -1,0 +1,193 @@
+@import url('https://use.typekit.net/mlf2xlt.css');
+
+body {
+  height: 100%;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    font-family: "new-order", sans-serif;
+    font-weight: bold;
+}
+
+#wrapper {
+    background-image: url("../img/background.webp");
+    background-size: cover;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 0.2fr repeat(4, 1fr);
+    height: 100%;
+    width: 100vw;
+    padding: 1.5vw;
+    background-color: black;
+}
+
+#menu {
+    grid-area: 1 / 1 / 2 / 6;
+}
+
+#menu img {
+    width: 6vw;
+}
+
+#menu ul {
+    width: 95%;
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+#menu li:hover > a {
+    color: #0066C3;
+    text-decoration: underline;
+}
+
+ul li:nth-child(2) {
+    margin-left: auto;
+}
+
+li {
+    display: flex;
+    align-items: center;
+}
+
+li a {
+    margin-right: 2.5vw;
+    text-decoration: none;
+    font-size: 1.8vw;
+    color: white;
+}
+
+li .icon {
+    margin-right: 0.7vw;
+    color: white;
+}
+
+#billet-icon {
+    margin-top: -0.7vw;
+    margin-right: 0.5vw;
+    transform: rotate(90deg);
+}
+
+#content {
+    grid-area: 2 / 1 / 6 / 4;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding-left: 10vw;
+}
+
+h1 {
+    line-height: 5.5vw;
+    font-size: 3.5vw;
+}
+
+#img-container {
+    grid-area: 2 / 4 / 6 / 6;
+    position: relative;
+    display: grid;
+}
+
+#img {
+    width: 40vw;
+    height: 92vh;
+    background-color: rgb(115, 98, 98);
+    transform: translate(42%);
+    display: flex;
+    color: black;
+    justify-content: center;
+    border-radius: 12vw 12vw 0vw 0vw;
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    grid-row: 2 / span 5;
+    grid-column: 3 / span 2;
+}
+
+#infos {
+    margin-top: auto;
+    z-index: 1;
+    width: 100%;
+    height: 6.5vw;
+    margin-bottom: 7.5vw;
+    background-color: white;
+    border-radius: 1.5vw;
+    display: flex;
+    color: black;
+    justify-content: center;
+    align-items: center;
+}
+
+#tid-tilbage {
+    position: absolute;
+    z-index: 1;
+    margin-bottom: 1.5vw;
+    bottom: 0;
+}
+
+.info {
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1vw;
+}
+
+.info p {
+    margin: 0;
+    padding: 0;
+    margin-left: 1.5vw;
+}
+
+.info:first-child::after,
+.info:last-child::after {
+    display: none;
+}
+
+.info::after {
+    content: " ";
+    display: block;
+    height: 10%;
+    width: 0.1vw;
+    position: absolute;
+    background: black;
+}
+
+.info-title {
+    font-size: 1.8vw;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+    text-align: center;
+    padding: 1.5vw;
+    padding-bottom: 1.2vw;
+    color: white;
+    text-decoration: none;
+    background-color: #0066C3;
+    width: 60%;
+    border-radius: 0.3vw;
+}
+
+.btn:hover {
+    background-color: #015bb0;
+}
+
+#pris {
+    font-size: 1.2vw;
+    text-decoration-thickness: 0.2vw;
+    text-decoration-color: black;
+    color: rgb(0, 0, 0);
+}
+
+#sale {
+    font-size: 1.2vw;
+    display: none;
+    margin-left: 0.3vw;
+}
+
+#pris_kasse {
+    display: flex;
+}

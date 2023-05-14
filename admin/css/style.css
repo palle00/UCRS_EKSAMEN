@@ -1,0 +1,309 @@
+  :root {
+    --primary-color: #9cdcfe;
+    --secondary-color: #ce9178;
+    --tertiary-color: #b5cea8;
+    --quaternary-color: #ccc;
+    --background-color: #1f1f2b6b;
+    --page-background-color: #181821;
+    --box-shadow-color: rgba(0, 0, 0, 0.08);
+    --hover-transition: all 0.3s ease;
+    --text-color: white;
+  }
+
+  @import url('https://fonts.cdnfonts.com/css/helvetica-rounded-lt-std');
+
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    background-color: var(--background-color);
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: #3185b6;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #165a82;
+  }
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: white;
+  }
+  body {
+    font-family: 'Helvetica Rounded LT Std', sans-serif;
+    font-weight: bold;
+    background-color: var(--page-background-color);
+    height: auto;
+  }
+  .wrapper {
+    display: grid;
+    grid-template-columns: 0.25fr 1fr .6fr;
+    grid-template-rows: 0.1fr minmax(0, .3fr);
+    grid-column-gap:3rem;
+    grid-row-gap:4.8rem;
+  }
+  .title_card {
+    grid-area: 1 / 2 / 2 / 4;
+    margin-top: .5rem;
+  }
+  #bar {
+    grid-area: 1 / 2 / 3 / 4;
+    margin-right: 3rem;
+    margin-top: 3rem;
+    display: flex;
+    margin-bottom: 1rem;
+ 
+  }
+  #events {
+    grid-area: 3 / 2 / 4 / 4;
+  }
+ 
+  .sidebar {
+    flex: 0 0 12rem;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  .sidebar li {
+    padding: 0.8rem 1.6rem;
+    transition: var(--hover-transition);
+    position: relative;
+  }
+  .sidebar ul {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  .sidebar li:last-child {
+    margin-top: auto;
+  }
+  .back {
+    margin-bottom: .5rem;
+  }
+  .sidebar li.active:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 0.3rem;
+    background-color: #00bfff;
+  }
+  .sidebar li.active a, .sidebar li.active .icon {
+    color: #00bfff;
+  }
+  .sidebar li:hover a, .sidebar li:hover .icon {
+    color: #00bfff;
+  }
+  .sidebar li:hover:before {
+    background-color: #00bfff;
+  }
+  .sidebar li a, .sidebar li .icon {
+    color: #9b9b9b;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+  .sidebar li .icon {
+    margin-right: 0.5rem;
+  }
+  .sidebar li:hover {
+    transform: translateX(0.5rem);
+  }
+  h1 {
+    font-size: 1.8rem;
+    
+  }
+  #recent_event{
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+  #current_event
+  {
+    margin-top: 8rem;
+    margin-bottom: 1rem;
+  }
+
+  #color {
+    background-color: var(--background-color);
+    padding-bottom: 3rem;
+  }
+  #events {
+    width: 92%;
+    margin-top: auto; 
+  }
+
+  table {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-collapse: separate;
+    width: 100%;
+    border-spacing: 0;
+
+  }
+  th {
+    width: 25%;
+    font-size: 1.25rem;
+    white-space: nowrap;
+
+  }
+  tr td {
+    border-bottom: 1px solid var(--quaternary-color);
+  }
+  tr {
+    text-align: left;
+    height: 5rem;
+  
+  }
+  .event {
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+  }
+  tbody tr:hover {
+    cursor: pointer;
+    background-color: #3434476b;
+  }
+#bar
+{
+  height: fit-content;
+}
+
+#opret
+{
+  width: 60%;
+  height: 100%;
+  margin-right: 2rem;
+  padding: 0.8rem;
+  background-color: var(--background-color);
+  display: flex;
+  flex-direction: column;
+}
+#statistik
+{
+  width: 33%;
+  padding: 0.8rem;
+  background-color: var(--background-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+form
+{
+  display: flex;
+  flex-direction: column;
+  z-index: 2;
+}
+label
+{
+  width: 100%;
+}
+#create_party
+{
+  align-items: center;
+}
+
+.form-group
+{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  justify-content: center;
+
+}
+
+form input, button
+{
+  background-color: #2D2D3C;
+  color: rgb(255, 255, 255);
+}
+
+
+
+#swal2-content
+{
+  color: black;
+}
+
+
+input[type='file']
+{
+  color: white;
+}
+
+#err
+{
+  color: red;
+}
+
+.btn
+{
+cursor: pointer;
+background-color: #2D2D3C;
+color: white;
+padding: .5rem 1rem .5rem 1rem;
+z-index: 2;
+}
+
+.btn:hover
+{
+background-color: #46465c;
+}
+
+.form-2
+{
+  display: none;
+}
+
+.form-group-btn
+{
+  display: flex;
+  gap: .5rem;
+  margin-top: 1rem;
+}
+
+label
+{
+  margin-top: .5rem;
+}
+
+input, select
+  {
+    width: 100%;
+    padding: .4rem;
+    font-size: 1rem;
+    border-style: none;
+  }
+
+
+
+  .phone
+  {
+    display: none; 
+    position: relative;
+    width: 100%;
+  }
+
+  .phone ul
+  {
+      display: flex;
+      flex-direction: row;
+      text-decoration: none;
+      list-style: none;
+  }
+
+  .phone li
+  {
+    display: flex;
+  }
+
+  .phone li.active:before {
+  
+  display: none;  }

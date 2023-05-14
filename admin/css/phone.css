@@ -1,0 +1,106 @@
+@media screen and (max-width: 600px) {
+    body
+    {
+      height: 100vh;
+    }
+
+
+    .sidebar
+    {
+      display: none;
+    }
+    
+    .phone {
+      position: fixed;
+      top: calc(100% - 70px);
+      right: 0;
+      margin-bottom: 2rem;
+      background-color: #2d2d3cbe;
+      z-index: 9999;
+      display: flex;
+      align-items: center;
+      height: fit-content; /* set a fixed height for the phone element */
+    }
+    
+    #events
+    {
+      width: 100%;
+    }
+
+    table
+    {
+      padding-right: 2rem;
+    }
+
+
+    #current_event
+    {
+      margin-top: 0;
+    }
+    .phone ul
+    {
+      flex-wrap: wrap;
+    }
+    .phone li
+    {
+        font-size: .8rem;
+        padding: .5rem .5rem;
+    }
+    .wrapper
+    {
+      display: flex;
+      flex-direction: column;
+    }
+    #bar {
+      margin: 0;
+      margin-bottom: 1rem;
+      flex-direction: column;
+      width: 100%;
+    
+    }
+    #opret,#statistik
+    {
+      width: 100%;
+      margin: 0;
+    }
+    #opret
+    {
+      order: 2;
+    }
+    #statistik
+    {
+      order: 1;
+    }
+    h1, h2
+    {
+      margin-left: .5rem;
+    }
+
+    #stati div
+    {
+        margin: 0;
+    }
+
+    .qr
+    {
+        top: calc(100% - 37px);
+
+    }
+    .qr li:last-child
+    {
+        margin: 0;
+    }
+    .qr ul
+    {
+        width: 100%;
+
+        flex-wrap: nowrap;
+    }
+    .qr li
+    {
+        margin-right: auto;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+  }

@@ -1,0 +1,19 @@
+#bar
+{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+}
+
+
+#add_student
+{
+    justify-content: center;
+    align-items: center;
+}
+
+#slet
+{
+    font-size: .8rem;
+}
