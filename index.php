@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
     <link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon">
-    <meta name=”viewport” content=” width=device-width, height=device-height, initial-scale=1.0, user-scalable=yes,
-        maximum-scale=5.0″ />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
     <link href="fontawesome/css/fontawesome.css" rel="stylesheet">
     <link href="fontawesome/css/brands.css" rel="stylesheet">
     <link href="fontawesome/css/solid.css" rel="stylesheet">

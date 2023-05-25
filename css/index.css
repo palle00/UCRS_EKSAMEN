@@ -191,3 +191,74 @@ h1 {
 #pris_kasse {
     display: flex;
 }
+
+
+
+@media screen and (max-width: 600px) {
+
+    body
+    {
+        overflow: hidden;
+    }
+
+    #wrapper
+    {
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        align-items: center;
+        height: 100vh;
+    }
+    #menu
+    {
+        width: 90%;
+        margin-left: -4rem;
+    }
+   
+    #content
+    {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        width: 80%;
+        padding-left: 0;
+    }
+
+    #img
+    {transform: none;
+    height: 50%;
+    width: 80%;
+    order: 2;
+    border-radius: 0;}
+    #infos
+    {
+        height: 10.5vw;
+        margin-bottom: 0;
+    }
+    #fest-type, #fest-dato, #pris
+    {
+        font-size: .7rem;
+    }
+    #tid-tilbage
+    {
+        bottom:auto;
+        display: block;
+        position: relative;
+        font-size: .6rem;
+    }
+    #sale
+    {
+        font-size: 1rem;
+    }
+    #pris_kasse
+    {
+       justify-content: center;
+    }
+#navn
+{
+    font-size: 8.5vw;
+    line-height: 8.5vw;
+}
+    
+    
+}
