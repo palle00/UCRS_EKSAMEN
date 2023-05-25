@@ -12,8 +12,6 @@ $(document).ready(function () {
 
   }
 
-
-
   $("#næste").click(function () {
 
     $(".form-2").css("display", "flex");

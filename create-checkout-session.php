@@ -16,7 +16,7 @@ $checkout_session = $stripe->checkout->sessions->create([
       'currency' => 'DKK',
       'product_data' => [
         'name' => "Fest billet",
-        'description' =>  "Denne billet giver en engangs adgang til " . $navn
+        'description' =>  "Denne billet giver adgang til " . $navn
       ],
       'unit_amount' => $amount*100,
     ],

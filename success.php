@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-if (!isset($_SESSION['sendmail'])) {
+if (!isset($_SESSION['cron'])) {
   header('Location: index.php');
   exit;
 }
@@ -26,7 +26,7 @@ $stmt->bind_param(
 $stmt->execute();
 
 
-
+require_once('vendor/autoload.php');
 //Mail and QR system
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;

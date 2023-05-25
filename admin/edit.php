@@ -11,10 +11,6 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
 //connect til databasen
 require_once '../config.php';
 
-
-
-$link->close();
-
 ?>
 <!DOCTYPE html>
 <html lang="en">

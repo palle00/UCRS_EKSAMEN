@@ -92,16 +92,6 @@ $('#scan-another').click(function() {
 
 });
 
-
-
-
-
-
-
-
-
-
-
 function register(navn, klasse)
 {
   
@@ -141,13 +131,6 @@ function register(navn, klasse)
       },
     });
   }
-
-
-
-
-
-
-
 
 
 

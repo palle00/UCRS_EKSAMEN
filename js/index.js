@@ -39,7 +39,7 @@ $(function()
                     startCountdown(); // Start countdown automatically
                 
                 }
-                else if (startDate < now && slutDate > now)
+                else if (startDate < now)
                 {
                     $('#pris').text(data[0]['Standard_pris']+'kr');
                     $('#fest-type').text('Gymnasie fest');

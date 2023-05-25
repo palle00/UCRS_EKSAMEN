@@ -34,8 +34,6 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     // Valider koder og navn med serveren
     if(empty($username_err) && empty($password_err)){
         $sql = "SELECT ID, Brugernavn, Kode, Rolle FROM Login WHERE Brugernavn = ?";
-
-        
         // anti sql-injection - Bruger prepared statements til at 
         if($stmt = mysqli_prepare($link, $sql)){
             mysqli_stmt_bind_param($stmt, "s", $username);
